@@ -21,7 +21,7 @@ html, body {
     width: 100%;
 }
 .App {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 15px;
 }
 .main-content {
@@ -124,12 +124,17 @@ ul li:nth-child(4) button:hover {
 #img-box {
     height: 100%;
     max-width: 500px;
-
-    margin-left: 30px;
 }
 
 canvas {
     margin-top: 30px;
     max-width: 500px;
     max-height: 500px;
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }

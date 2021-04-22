@@ -7,11 +7,6 @@ export default class Crop extends Component {
         width: '',
         height: '',
         image: null,
-
-        onImageChange: false
-
-        // overturn: false,
-        // specular: false
     }
 
     overturn = () => {
@@ -27,11 +22,9 @@ export default class Crop extends Component {
 
     validateOnChange = event => {
         const input = event.target;
-        // const form = input.form;
         const value = input.value;
     
         this.setState({
-            // ...this.state[form.name],
             [input.name]: value
         });
     };
@@ -39,8 +32,7 @@ export default class Crop extends Component {
     onImageChange = (e) => {
         let img = e.target.files[0];
         this.setState({
-            image: URL.createObjectURL(img),
-            onImageChange: true
+            image: URL.createObjectURL(img)
         });
     }
 
@@ -78,7 +70,7 @@ export default class Crop extends Component {
             <ul className="side-menu">
             <li>
                 <label className="file-upload">
-                    <input type="file" onChange={this.onImageChange}/>
+                    <input type="file" accept="image/*" onChange={this.onImageChange}/>
                     <p>Upload img</p>
                 </label>
             </li>
@@ -100,16 +92,6 @@ export default class Crop extends Component {
                     onChange={this.validateOnChange}
                 />
                 </li>
-                {/* <li>
-                    <span style={{cursor:"pointer", border:"1px solid black", display: "inline-block"}} 
-                        onClick={ this.overturn }>
-                        <RiArrowUpDownFill/>
-                    </span>
-                    <span style={{cursor:"pointer", border:"1px solid black", display: "inline-block"}} 
-                        onClick={ this.specular }>
-                        <RiArrowLeftRightLine/>
-                    </span>
-                </li> */}
                 <li>
                     <button onClick={this.updateCanvas}> Crop </button>
                 </li>
@@ -118,11 +100,8 @@ export default class Crop extends Component {
                 </li>
             </ul>
 
-            <div id="img-box" 
-                // className={ this.state.overturn ? "r180" : "r0" }
-            > 
+            <div id="img-box"> 
             <img 
-                // className={ this.state.specular ? "s-1" : "s1" }
                 id="uploadImg" 
                 crossOrigin="Anonymous" 
                 src={this.state.image} 
@@ -135,8 +114,6 @@ export default class Crop extends Component {
                 width={width}>
             </canvas>
             </div> 
-            {/* { this.updateCanvas ? <a id="download" download="cropImage.png" href="" onClick={this.download_img}> Download to myImage.jpg </a>
-            : <p> TTTTTTTTTTTT </p>} */}
         </div>
         )
     }

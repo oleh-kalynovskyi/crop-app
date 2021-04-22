@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/oleh-kalynovskyi/crop-app/static/css/main.0cc7b607.chunk.css",
-    "main.js": "/oleh-kalynovskyi/crop-app/static/js/main.2e2cfab3.chunk.js",
-    "main.js.map": "/oleh-kalynovskyi/crop-app/static/js/main.2e2cfab3.chunk.js.map",
+    "main.css": "/oleh-kalynovskyi/crop-app/static/css/main.d2faa897.chunk.css",
+    "main.js": "/oleh-kalynovskyi/crop-app/static/js/main.89f711c4.chunk.js",
+    "main.js.map": "/oleh-kalynovskyi/crop-app/static/js/main.89f711c4.chunk.js.map",
     "runtime-main.js": "/oleh-kalynovskyi/crop-app/static/js/runtime-main.73e45e3c.js",
     "runtime-main.js.map": "/oleh-kalynovskyi/crop-app/static/js/runtime-main.73e45e3c.js.map",
     "static/js/2.50e49e04.chunk.js": "/oleh-kalynovskyi/crop-app/static/js/2.50e49e04.chunk.js",
     "static/js/2.50e49e04.chunk.js.map": "/oleh-kalynovskyi/crop-app/static/js/2.50e49e04.chunk.js.map",
     "index.html": "/oleh-kalynovskyi/crop-app/index.html",
-    "static/css/main.0cc7b607.chunk.css.map": "/oleh-kalynovskyi/crop-app/static/css/main.0cc7b607.chunk.css.map",
+    "static/css/main.d2faa897.chunk.css.map": "/oleh-kalynovskyi/crop-app/static/css/main.d2faa897.chunk.css.map",
     "static/js/2.50e49e04.chunk.js.LICENSE.txt": "/oleh-kalynovskyi/crop-app/static/js/2.50e49e04.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.73e45e3c.js",
     "static/js/2.50e49e04.chunk.js",
-    "static/css/main.0cc7b607.chunk.css",
-    "static/js/main.2e2cfab3.chunk.js"
+    "static/css/main.d2faa897.chunk.css",
+    "static/js/main.89f711c4.chunk.js"
   ]
 }
